@@ -60,26 +60,15 @@ public class Main {
         При выполнении каждого условия программа должна выводить в консоль сообщение в формате:
         «Если возраст человека равен …, то ему нужно ходить … (в зависимости от возраста дописать нужное)».
          */
-        byte ageHuman = 16;
+        byte ageHuman = 25;
         if (ageHuman >= 2 && ageHuman <= 6) {
             System.out.println("Если возраст человека равен " + ageHuman + " то ему нужно ходить в детский сад");
-        } else {
-            System.out.println("Этому человеку не надо ходить в десткий сад");
-        }
-        if (ageHuman >= 7 && ageHuman <= 17) {
+        } else if (ageHuman >= 7 && ageHuman <= 17) {
             System.out.println("Если возраст человека равен " + ageHuman + " то ему нужно ходить в школу");
-        } else {
-            System.out.println("Этому человеку не надо ходить в школу");
-        }
-        if (ageHuman >= 18 && ageHuman <= 24) {
+        } else if (ageHuman >= 18 && ageHuman <= 24) {
             System.out.println("Если возраст человека равен " + ageHuman + " то ему нужно ходить в университет");
         } else {
-            System.out.println("Этому человеку не надо ходить в университет");
-        }
-        if (ageHuman > 24) {
             System.out.println("Если возраст человека равен " + ageHuman + " то ему нужно ходить на работу");
-        } else {
-            System.out.println("Этому человеку не надо ходить на работу");
         }
 
         System.out.println("Задача №5");
@@ -93,21 +82,13 @@ public class Main {
         то ему … (в зависимости от возраста дописать нужное: нельзя кататься на аттракционе,
         можно кататься на аттракционе в сопровождении / без сопровождения взрослого)».
          */
-        byte child = 9;
+        byte child = 15;
         if (child < 5) {
             System.out.println("Если возраст ребенка равен " + child + " то ему нельзя кататься на аттракционе");
-        } else {
-            System.out.println("Ребенок может получить травму");
-        }
-        if (child > 5 && child < 14) {
+        } else if (child >= 5 && child <= 14) {
             System.out.println("Если возраст ребенка равен " + child + " то ему можно кататься на аттракционе в сопровождении");
-        }   else {
-            System.out.println("Если взрослого нет, то кататься нельзя");
-        }
-        if (child > 14) {
-            System.out.println("Если возраст ребенка равен " + child + " то ему можно кататься на аттракционе без сопровождения взрослого");
         } else {
-            System.out.println("Ребенку нужно сопровождение или кататься на атракционе запрещено");
+            System.out.println("Если возраст ребенка равен " + child + " то ему можно кататься на аттракционе без сопровождения взрослого");
         }
 
         System.out.println("Задача №6");
@@ -138,12 +119,12 @@ public class Main {
         С помощью условного оператора и конструкции else напишите программу,
         которая вычисляет, какое из трех чисел бо́льшее, и выводит результат в консоль.
          */
-        int one = 1;
-        int two = 2;
-        int three = 3;
-        if (one > two) {
-            System.out.println("Число one само большое");
-        } else if (two > three) {
+        int one = 5;
+        int two = 9;
+        int three = 2;
+        if (one >= two && one >= three) {
+            System.out.println("Число one самое большое");
+        } else if (two >= three && two >= one) {
             System.out.println("Число two самое большое");
         } else {
             System.out.println("Число three самое большое");
